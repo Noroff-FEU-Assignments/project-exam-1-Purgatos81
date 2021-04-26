@@ -16,10 +16,10 @@ async function getBlogs() {
 
         for (let i = 0; i < blogs.length; i++) {
             blogResults.innerHTML += 
-            `<div class="blog">
+            `<a href="blogdetails.html?id=${blogs[i].id}">
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <p> ${blogs[i].content.rendered}</p>
-            </div>`
+            </a>`
         }
     }
     catch(error) {
