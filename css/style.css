@@ -29,6 +29,27 @@ a:visited {
     color: white;
 }
 
+/*Home page stylig*/
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-fig {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-h2 {
+    align-self: center;
+}
+
 /*media queries here*/
 
 @media only screen and (min-width:991px) {
