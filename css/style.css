@@ -25,6 +25,10 @@ a:visited {
     color: lightgray;
 }
 
+li {
+    list-style-type: none;
+}
+
 .hamburger-label {
     color: white;
 }
@@ -53,6 +57,22 @@ img {
 /*media queries here*/
 
 @media only screen and (min-width:991px) {
+
+    .top-navigation {
+        display: flex;
+    }
+
+    .hamburger-label {
+        display: none;
+    }
+
+    #hamburger-checkbox {
+        display: none;
+    }
+
+    .top-menu {
+        display: flex;
+    }
 
 }
 
