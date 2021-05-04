@@ -1,0 +1,92 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+header {
+    background-color: #000;
+}
+
+/*Nav styling*/
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightgray;
+}
+
+a:visited {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.hamburger-label {
+    color: white;
+}
+
+/*media queries here*/
+
+@media only screen and (min-width:991px) {
+
+}
+
+@media only screen and (min-width:600px) and (max-width:990px) {
+
+}
+
+@media only screen and (min-width:200px) and (max-width:599px) {
+    .top-menu {
+        display: none;
+    }
+
+    #hamburger-checkbox {
+        display: none;
+    }
+
+    #hamburger-checkbox:checked ~ .top-menu {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 1/4;
+        padding-left: 0px;
+    }
+    
+    .hamburger-label {
+        color: white;
+        grid-column: 3/4;
+        align-self: center;
+        font-weight: bold;
+    }
+
+        
+    .top-navigation {
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto auto;    
+    }
+    
+    .logo {
+        grid-column: 1/2;
+        align-self: center;
+        padding-left: 6px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    
+    .navelement1 {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        border:  solid black 3px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navelement2 {
+        padding-left: 10%;
+    }
+}

@@ -9,16 +9,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <h1>Hello</h1>
-    <a href="blogs.html">Blogs</a>
-    <script src="js/script1.js"></script>
+    <header>
+        <nav class="top-navigation">
+            <a href="index.html">
+                <img src="media/TW.png" alt="TW Blog Logo" width="60" class="logo">
+            </a>
+            <label class="hamburger-label" for="hamburger-checkbox"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-checkbox">
+            <ul class="top-menu">
+                <li class="navelement1">
+                    <div class="nav-search" id="search-bar">
+                        <input type="text" id="search" name="search_bar">search
+                            <a href="index.html" class="searc_icon">
+                                <i class="fas fa-search searc-icon"></i>                 
+                            </a>
+                    </div>
+                </li>
+                <li class="navelement2"><a href="index.html" class="nav-button">Home</a></li>
+                <li class="navelement2"><a href="blogs.html" class="nav-button">Blogs</a></li>
+                <li class="navelement2"><a href="contact.html" class="nav-button">Contact</a></li>
+                <li class="navelement2"><a href="about.html" class="nav-button">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <h1>Hello</h1>
+        <a href="blogs.html">Blogs</a>
+        <script src="js/script1.js"></script>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/ed5a60b813.js" crossorigin="anonymous"></script>
 </body>
 </html>
