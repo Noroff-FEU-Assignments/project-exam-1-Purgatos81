@@ -17,6 +17,39 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
-    <h1>Contact</h1>
+    <main class="formContainer">
+        <form id="contactForm">
+            <div>
+                <label> 
+                    Name (More than 5 characters)
+                    <input name="name" id="name">
+                </label>
+                <div class="validation-error" id="nameError">Please enter a valid name</div> 
+            </div>
+            <div>
+                <label>
+                    Subject (More than 15 characters)
+                    <input name="subject" id="subject">
+                </label>
+                <div class="validation-error" id="subjectError">Subject must be more than 15 characters</div> 
+            </div>
+            <div>
+                <label>
+                    Email (required)
+                    <input name="email" id="email">
+                </label> 
+                <div class="validation-error" id="emailError">Please enter a valid email</div> 
+            </div>
+            <div>
+                <label>
+                    Message (More than 25 characters)
+                    <input name="address" id="address">
+                </label> 
+                <div class="validation-error" id="addressError">Must be at least 25 characters long</div> 
+            </div>
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="js/script1.js"></script>
 </body>
 </html>

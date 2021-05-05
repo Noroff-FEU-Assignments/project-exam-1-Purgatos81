@@ -54,6 +54,66 @@ img {
     align-self: center;
 }
 
+
+/*Contact Form Styling*/
+
+form {
+    padding: 2em;
+    background: white;
+    max-width: 50%;
+}
+
+input {
+    width: 100%;
+    margin-top: 3px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+button {
+    background: black;
+    border: none;
+    width: 180px;
+    padding: 10px;
+    color: white;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contactForm {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.validation-error {
+    display: none;
+    color: red;
+}
+
+.loading {
+    border: 5px solid gray;
+    border-top: 5px solid darkgray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*media queries here*/
 
 @media only screen and (min-width:991px) {
