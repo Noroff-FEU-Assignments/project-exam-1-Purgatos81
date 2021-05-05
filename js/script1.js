@@ -5,12 +5,12 @@ const nameInput = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
-const address = document.querySelector("#address");
-const addressError = document.querySelector("#addressError");
+const address = document.querySelector("#message");
+const messageError = document.querySelector("#messageError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 let nameValidator = 0;
-let addressValidator = 0;
+let messageValidator = 0;
 let emailValidator = 0;
 let subjectValidator = 0;
 
@@ -30,9 +30,9 @@ function validateContactForm() {
     }
     
     if (address.value.trim().length > 25) {
-        addressError.style.display = "none";
+        messageError.style.display = "none";
     } else {
-        addressError.style.display = "block";
+        messageError.style.display = "block";
     }
 
     if (checkEmail(email.value) === true) {
