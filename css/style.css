@@ -236,14 +236,36 @@ button {
 
     .main-image-nametext {
         position: absolute;
-        top: 8px;
-        left: 16px;
+        top: 28px;
+        left: 10px;
         color: white;
+        font-size: 20px;
+
     }
 
     .main-image-jobb-title {
         position: absolute;
-        top: 20px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        border-bottom: solid 1px white;
+    }
+
+    .main-image-h1 {
+        position: absolute;
+        bottom: -30px;
+        right: 10px;
+        left: 10px;
+        transform: translate(-0%, -40%);
+        color: white;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .main-h2 {
+        text-align: center;
+        padding-top: 30px;
     }
 
     .highlights-container {
