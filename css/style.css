@@ -151,9 +151,8 @@ button {
 
     #hamburger-checkbox:checked ~ .top-menu {
         display: grid;
-        grid-row: 2/3;
         grid-column: 1/4;
-        padding-left: 0px;
+        padding-left: 0;
     }
     
     .hamburger-label {
