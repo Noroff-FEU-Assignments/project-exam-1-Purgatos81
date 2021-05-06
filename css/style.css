@@ -189,4 +189,41 @@ button {
     .navelement2 {
         padding-left: 10%;
     }
+
+/*home styling here*/
+
+    .highlights-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto auto 10px 1px 40px auto;
+    }
+
+    .highlights-h2 {
+        background-color: black;
+        color: white;
+        grid-column: 1 / 4;
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 50px 0;
+    }
+
+    .highlight-img1 {
+        grid-column: 2/3;
+        grid-row: 2 / 3;
+        margin-top: -50px;
+    }   
+
+    .linebetween {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        border-top: solid darkgray 1px;
+    }
+
+    .highlight-img2 {
+        grid-column: 2/3;
+        grid-row: 6 / 7;
+
+    }
+
 }
+
