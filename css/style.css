@@ -156,10 +156,15 @@ button {
     }
     
     .hamburger-label {
+        display: flex;
+        justify-content: flex-end;
         color: white;
         grid-column: 3/4;
         align-self: center;
         font-weight: bold;
+        margin-top: 0px;
+        font-size: 32px;
+        padding-right: 12px;
     }
 
         
@@ -172,9 +177,9 @@ button {
     .logo {
         grid-column: 1/2;
         align-self: center;
-        padding-left: 6px;
-        padding-bottom: 10px;
-        padding-top: 5px;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 10px;
     }
     
     .navelement1 {
