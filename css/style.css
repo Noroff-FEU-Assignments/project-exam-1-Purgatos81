@@ -190,12 +190,45 @@ button {
         padding-left: 10%;
     }
 
+    .footer-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto 20px 1 20px auto;
+        background-color: black;
+        padding-bottom: 15px;
+    }
+
+    .footer-nav {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+
+    .footer-line-between {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border-top: solid lightgray 1px;
+        margin-top: 0px;
+    }
+
+    .copy-foot {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
 /*home styling here*/
 
     .highlights-container {
         display: grid;
         grid-template-columns: 20px auto 20px;
         grid-template-rows: auto auto 10px 1px 40px auto;
+        padding-bottom: 50px;
     }
 
     .highlights-h2 {
