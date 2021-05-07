@@ -24,7 +24,8 @@ async function fetchBlog() {
 
         detailTitle.innerHTML = `${blogDetails.title.rendered}`
 
-        blogContainer.innerHTML = `<h1>${blogDetails.title.rendered}</h1>
+        blogContainer.innerHTML = `
+        <h1>${blogDetails.title.rendered}</h1>
         <p>${blogDetails.content.rendered}</p>
         `
 
