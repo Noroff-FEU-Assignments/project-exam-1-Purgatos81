@@ -17,7 +17,9 @@ async function getBlogs() {
         for (let i = 0; i < blogs.length; i++) {
             blogResults.innerHTML += 
             `<a href="blogdetails.html?id=${blogs[i].id}">
-            <img
+            <div>
+                <img src="${blogs[i].excerpt.featured_media}">
+            </div>    
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <p> ${blogs[i].excerpt.rendered}</p>
             </a>`
