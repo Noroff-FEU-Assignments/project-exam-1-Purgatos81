@@ -185,10 +185,23 @@ button {
     .navelement1 {
         background-color: #000;
         display: flex;
-        justify-content: center;
         border:  solid black 3px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .nav-search {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #search {
+        background-color: black;
+        border-color: black;
+    }
+
+    .searc_icon {
+        padding-top: 15px;
     }
 
     .navelement2 {
