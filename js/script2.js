@@ -13,18 +13,26 @@ const id = Params.get("id");
 console.log(id);
 
 const ThisURL = "https://bluenord.no/wp-json/wp/v2/posts/" + id;
+const ThisURLEmbeded = "https://bluenord.no/wp-json/wp/v2/posts/" + id + "?_embed=wp:featuredmedia";
 
 console.log(ThisURL);
+console.log(ThisURLEmbeded);
 
 async function fetchBlog() {
     try {
         const resp = await fetch(ThisURL);
+        const resp2 = await fetch(ThisURLEmbeded);
         const blogDetails = await resp.json();
+        const blogImgDetails = await resp2.json();
         console.log(blogDetails);
+        console.log(blogImgDetails);
 
         detailTitle.innerHTML = `${blogDetails.title.rendered}`
 
         blogContainer.innerHTML = `
+        <div>
+        <img src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        </div>   
         <h1>${blogDetails.title.rendered}</h1>
         <p>${blogDetails.content.rendered}</p>
         `
