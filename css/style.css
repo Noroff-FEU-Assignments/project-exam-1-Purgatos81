@@ -33,6 +33,12 @@ li {
     color: white;
 }
 
+
+
+#faSearchIcon {
+    color: darkgray;
+}
+
 /*Home page stylig*/
 
 .main-home {
@@ -184,10 +190,11 @@ button {
     
     .navelement1 {
         background-color: #000;
-        display: flex;
         border:  solid black 3px;
         padding-top: 10px;
         padding-bottom: 10px;
+        border-top: solid 1px darkgray;
+        border-bottom: solid 1px darkgray;
     }
 
     .nav-search {
@@ -202,6 +209,7 @@ button {
 
     .searc_icon {
         padding-top: 15px;
+        padding-right: 8px;
     }
 
     .navelement2 {
