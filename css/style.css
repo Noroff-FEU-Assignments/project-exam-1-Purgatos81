@@ -323,5 +323,10 @@ button {
         border-top: solid darkgray 1px;
     }
 
+    /*Blogs page styling here*/
+    .blogs-h1 {
+        text-align: center;
+    }
+
 }
 

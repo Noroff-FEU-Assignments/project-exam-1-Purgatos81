@@ -9,15 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <h1>List of Blogs</h1>
+    <header>
+        <nav class="top-navigation">
+            <a href="index.html">
+                <img src="media/TW.png" alt="TW Blog Logo" width="60" class="logo">
+            </a>
+            <label class="hamburger-label" for="hamburger-checkbox"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-checkbox">
+            <ul class="top-menu">
+                <li class="navelement1">
+                    <div class="nav-search" id="search-bar">
+                        <input type="text" id="search" name="search_bar" placeholder="Search Blogs">
+                            <a href="index.html" class="searc_icon">
+                                <i class="fas fa-search searc-icon"></i>                 
+                            </a>
+                    </div>
+                </li>
+                <li class="navelement2"><a href="index.html" class="nav-button">Home</a></li>
+                <li class="navelement2"><a href="blogs.html" class="nav-button">My Blogs</a></li>
+                <li class="navelement2"><a href="contact.html" class="nav-button">Contact Me</a></li>
+                <li class="navelement2"><a href="about.html" class="nav-button">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="hero-img-blogspaga">
+        <img src="media/colage.jpg" alt="Colage of pictures">
+    </div>
+    <h1 class="blogs-h1">Posts</h1>
         <div class="blogs-container">
             <div class="blogs">
                 <div class="loading">
@@ -26,6 +45,17 @@
             </div>
 
         </div>
+    </main>    
+        <footer class="footer-container">
+            <ul class="footer-nav">
+                <li class="footer-link"><a href="https://www.instagram.com/tommwilgaard/?hl=nb"><i class="fab fa-instagram-square"></i></a></li>
+                <li class="footer-link"><a href="https://www.facebook.com/tommwilgaard.christiansen"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="footer-link"><a href="https://www.linkedin.com/in/tomm-wilgaard-christiansen-48515235/?originalSubdomain=no"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <p class="footer-line-between"></p>
+            <div class="copy-foot">&copy; 1995 - 2021 TWC Media</div>
+        </footer>
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ed5a60b813.js" crossorigin="anonymous"></script>
 </body>
 </html>
