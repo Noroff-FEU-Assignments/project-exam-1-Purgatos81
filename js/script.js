@@ -3,22 +3,28 @@
 
 const blogResults = document.querySelector(".blogs");
 const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts";
+const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
 
 console.log(bluenordBlogsApi);
+console.log(bluenordEmbedApi);
 
 async function getBlogs() {
     try {
         const response = await fetch(bluenordBlogsApi);
+        const response2 = await fetch(bluenordEmbedApi);
         const jsonres = await response.json();
+        const jsonres2 = await response2.json();
         console.log(jsonres);
+        console.log(jsonres2);
         blogResults.innerHTML = "";
         const blogs = jsonres;
+        const blogsImg = jsonres2;
 
         for (let i = 0; i < blogs.length; i++) {
             blogResults.innerHTML += 
             `<a href="blogdetails.html?id=${blogs[i].id}">
             <div>
-                <img src="${blogs[i].excerpt.featured_media}">
+                <img src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
             </div>    
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <p> ${blogs[i].excerpt.rendered}</p>
