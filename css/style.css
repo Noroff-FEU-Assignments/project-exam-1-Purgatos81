@@ -56,17 +56,27 @@ img {
     max-width: 100%;
 }
 
-.main-h2 {
+.main-h1 {
     align-self: center;
 }
+
+
 /*Blogs page styling*/
 
 .blog-head {
     color: black;
 }
 
-#blog-p {
+.blog-a-link:link {
     color: black;
+}
+
+.blog-a-link:visited {
+    color: black;
+}
+
+.blog-img {
+    border-radius: 3px;
 }
 
 /*Contact Form Styling*/

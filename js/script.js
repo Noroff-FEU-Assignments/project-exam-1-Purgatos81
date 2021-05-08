@@ -22,9 +22,9 @@ async function getBlogs() {
 
         for (let i = 0; i < blogs.length; i++) {
             blogResults.innerHTML += 
-            `<a href="blogdetails.html?id=${blogs[i].id}">
+            `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
             <div>
-                <img src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+                <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
             </div>    
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <p id="blog-p"> ${blogs[i].excerpt.rendered}</p>
