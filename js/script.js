@@ -27,7 +27,7 @@ async function getBlogs() {
                 <img src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
             </div>    
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
-            <p> ${blogs[i].excerpt.rendered}</p>
+            <p class="blog-p"> ${blogs[i].excerpt.rendered}</p>
             </a>`
         }
     }
