@@ -108,6 +108,7 @@ label {
 .form-button {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 button {
@@ -414,6 +415,19 @@ button {
         padding-bottom: 20px;
         border-bottom: solid lightgray 1px;
         margin-bottom: 20px;
+    }
+
+    /*blogs spesific styling here*/
+
+    .details-container {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .blog-spesific-h1 {
+        margin-top: 30px;
+        margin-bottom: -10px;
     }
 
 }
