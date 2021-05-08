@@ -410,5 +410,11 @@ button {
         margin-top: -70px;
     }
 
+    #blog-p {
+        padding-bottom: 20px;
+        border-bottom: solid lightgray 1px;
+        margin-bottom: 20px;
+    }
+
 }
 
