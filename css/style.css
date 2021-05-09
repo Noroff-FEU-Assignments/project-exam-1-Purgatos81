@@ -372,6 +372,19 @@ button {
         padding-top: 30px;
     }
 
+    .carousel-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .carousel-img {
+        width: 50px;
+    }
+
+    .carousel-head {
+        font-size: 1em;
+    }
+
     .highlights-container {
         display: grid;
         grid-template-columns: 20px auto 20px;
