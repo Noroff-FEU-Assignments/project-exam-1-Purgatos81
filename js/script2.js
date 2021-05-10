@@ -32,7 +32,7 @@ async function fetchBlog() {
         blogContainer.innerHTML = `
         <div>
         <h1 class="blog-spesific-h1">${blogDetails.title.rendered}</h1>
-        <div id="blog-spefic-p"> ${blogDetails.excerpt.rendered}</div>
+        <div id="blog-spefic-p-excerpt"> ${blogDetails.excerpt.rendered}</div>
         <img src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
         <div>${blogDetails.content.rendered}</div>
         </div>   

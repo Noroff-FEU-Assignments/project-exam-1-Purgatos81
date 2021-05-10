@@ -173,8 +173,17 @@ button {
 
 @media only screen and (min-width:991px) {
 
+/*nav styling*/
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+
     .top-navigation {
-        display: flex;
+        display: grid;
+        grid-template-columns: 69px auto;
+        margin: -14px 0px;
     }
 
     .hamburger-label {
@@ -186,10 +195,105 @@ button {
     }
 
     .top-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .logo-a {
+        border-right: solid dimgray 1px;
+    }
+
+    .logo-text {
+        padding: 14px 0px 11px 14px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navelement1 {
+        grid-column: 5/6;
+        display: grid;
+    }
+
+    .navelement2 {
+        grid-row-start: 1;
+        border-right: solid dimgray 1px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        align-self: center;
+        text-align: center;
+    }
+
+    #active {
+        background-color: dimgray;
+    }
+
+    .nav-search {
         display: flex;
     }
 
+    #search {
+        height: 30px;
+        margin: 0;
+        background-color: black;
+        border-color: black;
+        align-self: center;
+    }
+
+    .searc_icon {
+        align-self: center;
+        padding-right: 15px;
+    }
+
+    .icon-copy-container {
+        grid-column-end: 7;
+        align-self: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .icon-copy-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column
+        padding: 0;
+    }
+    
+    .icon-link {
+        border-left: solid dimgray 1px;
+        padding: 22px 22px 22px 22px;
+        align-self: center;
+        margin: 0;
+    }
+
+    .icon-style {
+        align-self: center;
+    }
+
+    .icon-copy-line-between {
+        display: none;
+    }
+
+    .copy-nav {
+        display: none;
+    }
+
+    /* #active {
+        background-color: dimgray;
+    } */
+
+/*home styling here*/
+
+
 }
+
+
 
 @media only screen and (min-width:600px) and (max-width:990px) {
 
@@ -239,6 +343,10 @@ button {
         padding-top: 10px;
     }
     
+    .logo-text {
+        display: none;
+    }
+
     .navelement1 {
         background-color: #000;
         border:  solid black 3px;
@@ -477,6 +585,10 @@ button {
     .blog-spesific-h1 {
         margin-top: 30px;
         margin-bottom: -10px;
+    }
+
+    .blog-spefic-p-excerpt {
+        color:red;
     }
 
     /*About styling here*/
