@@ -60,6 +60,13 @@ img {
     text-align: center    ;
 }
 
+.carousel-a-link:link {
+    color: black;
+}
+
+.carousel-a-link:visited {
+    color: black;
+}
 
 /*Blogs page styling*/
 
@@ -374,15 +381,23 @@ button {
 
     .carousel-container {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+
+    .new-post-container {
+        display: flex;
     }
 
     .carousel-img {
-        width: 50px;
+        width: 70px;
     }
 
     .carousel-head {
-        font-size: 1em;
+        font-size: 10px;
+        align-self: center;
     }
 
     .highlights-container {
