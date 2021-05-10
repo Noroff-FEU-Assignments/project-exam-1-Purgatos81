@@ -313,7 +313,7 @@ button {
 
     .main-image-h {
         position: absolute;
-        top: 70%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -40%);
         color: white;
@@ -328,8 +328,10 @@ button {
     .latest-container {
         position: relative;
         margin-top: -50px;
-        margin-left: 60px;
-        margin-right: 60px;
+        max-width: 1000px;
+        min-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .carousel-container {
@@ -349,12 +351,11 @@ button {
     }
 
     .carousel-img {
-        max-width: 260px;
+        max-width: 240px;
     }
 
     .carousel-head {
         font-size: 20px;
-        max-width: 60px;
         text-align: center;
     }
 
