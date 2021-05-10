@@ -261,19 +261,13 @@ button {
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
-        flex-direction: column
-        padding: 0;
     }
     
     .icon-link {
         border-left: solid dimgray 1px;
-        padding: 22px 22px 22px 22px;
+        padding: 22px 22px 22px 14%;
         align-self: center;
         margin: 0;
-    }
-
-    .icon-style {
-        align-self: center;
     }
 
     .icon-copy-line-between {
@@ -284,12 +278,48 @@ button {
         display: none;
     }
 
-    /* #active {
-        background-color: dimgray;
-    } */
 
-/*home styling here*/
+    /*home styling here*/
+    
+    .main-fig-container {
+        position: relative;
+        text-align: center;
+        max-height: 10%;
+    }
 
+    .hero-img {
+        display: none;
+    }
+
+    .main-image-nametext {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+
+    }
+
+    .main-image-jobb-title {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        border-bottom: solid 1px white;
+        font-size: 30px;
+    }
+
+    .main-image-h {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
 
 }
 
@@ -453,6 +483,10 @@ button {
         text-align: center;
     }
 
+    .hero-img-desk {
+        display: none;
+    }
+
     .main-image-nametext {
         position: absolute;
         top: 15%;
@@ -472,7 +506,7 @@ button {
         border-bottom: solid 1px white;
     }
 
-    .main-image-h1 {
+    .main-image-h {
         position: absolute;
         top: 70%;
         left: 30%;
