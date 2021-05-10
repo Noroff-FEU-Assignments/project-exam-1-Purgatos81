@@ -275,6 +275,40 @@ button {
     }
 
 
+    .footer-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto 20px 1 20px auto;
+        background-color: black;
+        padding-bottom: 15px;
+    }
+
+    .footer-nav {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+
+    .footer-line-between {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border-top: solid lightgray 1px;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .copy-foot {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
     /*home styling here*/
     
     .main-fig-container {
@@ -355,6 +389,54 @@ button {
         text-align: center;
     }
 
+    .highlights-container {
+        display: grid;
+        grid-template-columns: 100px auto auto 100px;
+        grid-template-rows: auto auto 5px 1px 40px auto;
+        padding-bottom: 50px;
+    }
+
+    .highlights-h2 {
+        background-color: black;
+        color: white;
+        grid-column: 1 / 5;
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 50px 0;
+    }
+
+    .highlight-img1 {
+        grid-column: 2/3;
+        grid-row: 2 / 3;
+        margin-top: -50px;
+        position: relative;
+    }   
+
+    .highlight-img2 {
+        grid-column: 3/4;
+        grid-row: 2 / 3;
+        position: relative;
+    }   
+
+    .image-desciption {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        color: white;
+    }
+
+    .image-desciption1 {
+        position: absolute;
+        bottom: 90px;
+        left: 16px;
+        color: white;
+    }
+
+    .linebetween {
+        grid-column: 2/4;
+        grid-row: 4/5;
+        border-top: solid darkgray 1px;
+    }
 
 }
 
@@ -623,6 +705,13 @@ button {
     }   
 
     .image-desciption {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        color: white;
+    }
+
+    .image-desciption1 {
         position: absolute;
         bottom: 8px;
         right: 16px;
