@@ -25,8 +25,8 @@ async function getBlogs() {
             `<a class="carousel-a-link" href="blogdetails.html?id=${blogs[i].id}">
             <div class"new-post-container">
                 <img class="carousel-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
-            </div>    
-            <h3 class="carousel-head"> ${blogs[i].title.rendered}</h3>
+                <h3 class="carousel-head"> ${blogs[i].title.rendered}</h3>
+                </div>    
             </a>`
         }
     }

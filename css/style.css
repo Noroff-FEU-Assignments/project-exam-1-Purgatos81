@@ -383,21 +383,23 @@ button {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-left: 15px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .new-post-container {
         display: flex;
+        max-width: 60px;
     }
 
     .carousel-img {
-        width: 70px;
+        max-width: 60px;
     }
 
     .carousel-head {
         font-size: 10px;
-        align-self: center;
+        max-width: 60px;
+        text-align: center;
     }
 
     .highlights-container {
