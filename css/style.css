@@ -321,6 +321,44 @@ button {
         text-align: center;
     }
 
+    .main-h1 {
+        display: none;
+    }
+
+    .latest-container {
+        position: relative;
+        margin-top: -50px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .carousel-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .carousel-a-link {
+        max-width: 260px;
+    }
+
+    .new-post-container {
+        display: flex;
+        max-width: 260px;
+    }
+
+    .carousel-img {
+        max-width: 260px;
+    }
+
+    .carousel-head {
+        font-size: 20px;
+        max-width: 60px;
+        text-align: center;
+    }
+
+
 }
 
 
