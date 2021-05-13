@@ -442,6 +442,16 @@ button {
         border-top: solid darkgray 1px;
     }
 
+    /*blogs styling here*/
+
+    .blogs-h1 {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+        margin-top: 100px;
+    }    
+
 }
 
 
