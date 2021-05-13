@@ -219,6 +219,22 @@ button {
         text-align: center;
     }
 
+    .nav-button-active:hover {
+        text-decoration: underline;
+    }
+
+    .nav-button-active:active {
+        color: white;
+    }
+
+    .nav-button:hover {
+        text-decoration: underline;
+    }
+
+    .nav-button:active {
+        color: white;
+    }
+
     #active {
         background-color: dimgray;
     }
@@ -634,6 +650,22 @@ button {
         margin-top: 15px;
     }
 
+    .nav-button-active:hover {
+        color: white;
+    }
+
+    .nav-button-active:active {
+        font-weight: bold;
+    }
+
+    .nav-button:hover {
+        color: white;
+    }
+
+    .nav-button:active {
+        font-weight: bold;
+    }
+
     .nav-search {
         display: flex;
         justify-content: space-between;
@@ -762,8 +794,6 @@ button {
         text-align: center;
         display: none; /*Unsure if it fits*/
     }
-
-
 
     .latest-container {
         position: relative;
