@@ -651,19 +651,19 @@ button {
     }
 
     .nav-button-active:hover {
-        color: white;
+        text-decoration: underline;
     }
 
     .nav-button-active:active {
-        font-weight: bold;
-    }
-
-    .nav-button:hover {
         color: white;
     }
 
+    .nav-button:hover {
+        text-decoration: underline;
+    }
+
     .nav-button:active {
-        font-weight: bold;
+        color: white;
     }
 
     .nav-search {
