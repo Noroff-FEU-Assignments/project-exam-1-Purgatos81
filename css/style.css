@@ -471,6 +471,7 @@ button {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
+        margin: 50px;
     }
 
     .about-profil-img {
@@ -481,6 +482,18 @@ button {
     .about-p {
         grid-column: 1/2;
         grid-row: 2/4;
+        padding-right: 50px;
+    }
+
+    .about-contact-button {
+        background-color: black;
+        width: 120px;
+        display: inline-block;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 12px 10px 0px 10px;
+        border-radius: 5px;
+        text-align: center;
     }
 
 }
@@ -823,6 +836,17 @@ button {
     .about-p {
         margin-top: 15px;
         margin-bottom: 60px;
+    }
+
+    .about-contact-button {
+        background-color: black;
+        width: 120px;
+        display: inline-block;
+        padding: 12px 10px 12px 10px;
+        border-radius: 5px;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 50px;
     }
 
 }
