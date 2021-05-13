@@ -36,8 +36,6 @@ async function fetchBlog() {
         <img class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
         <div class="blog-spesific-p">${blogDetails.content.rendered}</div>
         </div>   
-    
-
         `
 
     }
