@@ -444,6 +444,10 @@ button {
 
     /*blogs styling here*/
 
+    .colage-mobile-img {
+        display: none;
+    }
+
     .blogs-h1 {
         background-color: black;
         color: white;
@@ -787,6 +791,11 @@ button {
     }
 
     /*Blogs page styling here*/
+
+    .colage-img {
+        display: none;
+    }
+
     .blogs-h1 {
         text-align: center;
     }
