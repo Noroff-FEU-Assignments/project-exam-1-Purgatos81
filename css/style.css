@@ -145,10 +145,6 @@ button {
     border: solid 1px black;
 }
 
-.about-h1 {
-    text-align: center;
-}
-
 .about-container {
     display: flex;
     flex-direction: column;
@@ -463,6 +459,28 @@ button {
     .blog-a-link {
         margin: 0px 20px 50px 20px;
         box-shadow: 20px 20px 10px gray;
+    }
+
+    /*about styling here*/
+
+    .about-h2 {
+        display: none;
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .about-profil-img {
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
+
+    .about-p {
+        grid-column: 1/2;
+        grid-row: 2/4;
     }
 
 }
