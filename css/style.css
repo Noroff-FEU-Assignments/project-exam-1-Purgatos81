@@ -179,7 +179,7 @@ button {
     .top-navigation {
         display: grid;
         grid-template-columns: 69px auto;
-        margin: -14px 0px;
+        margin: 0px 0px;
     }
 
     .hamburger-label {
@@ -203,7 +203,8 @@ button {
     }
 
     .logo-text {
-        padding: 14px 0px 11px 14px;
+        padding: 10px 0px 10px 14px;
+        margin: 0px;
     }
 
     .logo {
@@ -218,8 +219,8 @@ button {
     .navelement2 {
         grid-row-start: 1;
         border-right: solid dimgray 1px;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         align-self: center;
         text-align: center;
     }
@@ -261,7 +262,7 @@ button {
     
     .icon-link {
         border-left: solid dimgray 1px;
-        padding: 22px 22px 22px 14%;
+        padding: 10px 22px 10px 14%;
         align-self: center;
         margin: 0;
     }
@@ -342,6 +343,7 @@ button {
     }
 
     .main-image-h {
+        display: none;
         position: absolute;
         top: 60%;
         left: 50%;
@@ -394,6 +396,7 @@ button {
         grid-template-columns: 100px auto auto 100px;
         grid-template-rows: auto auto 5px 1px 40px auto;
         padding-bottom: 50px;
+        margin-top: 20px;
     }
 
     .highlights-h2 {
@@ -402,7 +405,7 @@ button {
         grid-column: 1 / 5;
         display: flex;
         justify-content: center;
-        padding: 30px 0 50px 0;
+        padding: 50px 0 50px 0;
     }
 
     .highlight-img1 {
