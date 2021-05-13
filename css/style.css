@@ -704,8 +704,8 @@ button {
 
     .latest-container {
         position: relative;
-        max-width: 600px;
-        min-width: 600px;
+        max-width: 300px;
+        min-width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-top: -20%;

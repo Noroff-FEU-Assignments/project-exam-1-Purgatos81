@@ -22,12 +22,12 @@ async function getBlogs() {
 
         for (let i = 0; i < 4; i++) {
             carouselResults.innerHTML += 
-            `<a class="carousel-a-link" href="blogdetails.html?id=${blogs[i].id}">
-            <div class"new-post-container">
+            `<div class"new-post-container">
+            <a class="carousel-a-link" href="blogdetails.html?id=${blogs[i].id}">
                 <img class="carousel-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
-                <h3 class="carousel-head"> ${blogs[i].title.rendered}</h3>
-                </div>    
-            </a>`
+                <h3 class="carousel-head"> ${blogs[i].title.rendered}</h3>  
+            </a>
+            </div>`
         }
     }
     catch(error) {
