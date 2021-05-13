@@ -320,7 +320,7 @@ button {
 
     .main-image-nametext {
         position: absolute;
-        top: 15%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -330,7 +330,7 @@ button {
 
     .main-image-jobb-title {
         position: absolute;
-        top: 35%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -349,7 +349,7 @@ button {
         text-align: center;
     }
 
-    .main-h1 {
+    .latest-post-p {
         display: none;
     }
 
@@ -672,9 +672,9 @@ button {
 
     .main-image-nametext {
         position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 25%;
+        left: 40%;
+        transform: translate(-35%, -50%);
         color: white;
         font-size: 20px;
 
@@ -682,7 +682,7 @@ button {
 
     .main-image-jobb-title {
         position: absolute;
-        top: 35%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -711,7 +711,7 @@ button {
         margin-top: -20%;
     }
 
-    .main-h1 {
+    .latest-post-p {
         font-size: 20px;
         color: white;
         text-align: left;
