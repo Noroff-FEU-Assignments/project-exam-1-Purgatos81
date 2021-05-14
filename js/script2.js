@@ -27,7 +27,7 @@ async function fetchBlog() {
         console.log(blogDetails);
         console.log(blogImgDetails);
 
-        detailTitle.innerHTML = `${blogDetails.title.rendered}`
+        detailTitle.innerHTML = `TWC-Blog | ${blogDetails.title.rendered}`
 
         blogContainer.innerHTML = `
         <div class="blog-spesific-container">

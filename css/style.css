@@ -79,6 +79,19 @@ img {
     color: black;
 }
 
+/*blog spesific styling*/
+
+.blog-spesific-p a {
+    color: blue;
+}
+
+.blog-spesific-p a:visited {
+    color: blue;
+}
+
+.blog-spesific-p a:hover {
+    text-decoration: underline;
+}
 
 /*Contact Form Styling*/
 
