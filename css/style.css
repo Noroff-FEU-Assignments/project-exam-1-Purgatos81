@@ -765,6 +765,10 @@ button {
         display: none;
     }
 
+    .main-h1 {
+        font-size: 30px;
+    }
+
     .main-image-nametext {
         position: absolute;
         top: 25%;
