@@ -606,6 +606,424 @@ button {
 
 
 @media only screen and (min-width:600px) and (max-width:990px) {
+    .top-menu {
+        display: none;
+    }
+
+    #hamburger-checkbox {
+        display: none;
+    }
+
+    #hamburger-checkbox:checked ~ .top-menu {
+        display: grid;
+        grid-column: 1/4;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .hamburger-label {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        grid-column: 3/4;
+        align-self: center;
+        font-weight: bold;
+        margin-top: 0px;
+        font-size: 32px;
+        padding-right: 12px;
+    }
+
+        
+    .top-navigation {
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto auto;    
+    }
+    
+    .logo {
+        grid-column: 1/2;
+        align-self: center;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 10px;
+    }
+    
+    .logo-text {
+        display: none;
+    }
+
+    .navelement1 {
+        background-color: #000;
+        border:  solid black 3px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-top: solid 1px darkgray;
+        border-bottom: solid 1px darkgray;
+        margin-bottom: 18px;
+        margin-top: 15px;
+    }
+
+    .nav-button-active:hover {
+        text-decoration: underline;
+    }
+
+    .nav-button-active:active {
+        color: white;
+    }
+
+    .nav-button:hover {
+        text-decoration: underline;
+    }
+
+    .nav-button:active {
+        color: white;
+    }
+
+    .nav-search {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #search {
+        background-color: black;
+        border-color: black;
+    }
+
+    .searc_icon {
+        padding-top: 15px;
+        padding-right: 8px;
+    }
+
+    .navelement2 {
+        padding-left: 11px;
+        padding-top: 12px;
+    }
+
+    .icon-copy-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto 20px 1 20px auto;
+        background-color: black;
+        padding-bottom: 15px;
+        border-top: 1px solid lightgray;
+        margin-top: 30px;
+    }
+
+    .icon-copy-nav {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+
+    .icon-copy-line-between {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        border-top: solid lightgray 1px;
+        margin-top: 50px;
+    }
+
+    .copy-nav {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto 20px 1 20px auto;
+        background-color: black;
+        padding-bottom: 15px;
+    }
+
+    .footer-nav {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 30px;
+    }
+
+    .footer-line-between {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border-top: solid lightgray 1px;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .copy-foot {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+/*home styling here*/
+
+    .main-fig-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .hero-img-desk {
+        display: none;
+    }
+
+    .main-h1 {
+        font-size: 30px;
+    }
+
+    .main-image-nametext {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transform: translate(-35%, -50%);
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .main-image-jobb-title {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        border-bottom: solid 1px white;
+    }
+
+    .main-image-h {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        transform: translate(-20%, -40%);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        display: none; /*Unsure if it fits*/
+    }
+
+    .latest-container {
+        position: relative;
+        max-width: 300px;
+        min-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20%;
+    }
+
+    .latest-post-p {
+        font-size: 20px;
+        color: white;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .carousel-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .loading-mob-home {
+        border: 5px solid gray;
+        border-top: 5px solid darkgray;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-top: 40px; 
+    }
+
+    .new-post-container {
+        display: flex;
+        max-width: 60px;
+    }
+
+    .carousel-img {
+        max-width: 120px;
+        padding: 0 1px;
+    }
+
+    .carousel-head {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .highlights-container {
+        display: grid;
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto auto 5px 1px 40px auto;
+        padding-bottom: 50px;
+    }
+
+    .highlights-h2 {
+        background-color: black;
+        color: white;
+        grid-column: 1 / 4;
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 50px 0;
+    }
+
+    .highlight-img1 {
+        grid-column: 2/3;
+        grid-row: 2 / 3;
+        margin-top: -50px;
+        position: relative;
+    }   
+
+    .highlight-img2 {
+        grid-column: 2/3;
+        grid-row: 6 / 7;
+        position: relative;
+    }   
+
+    .image-desciption {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        color: white;
+    }
+
+    .image-desciption1 {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        color: white;
+    }
+
+    .linebetween {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        border-top: solid darkgray 1px;
+    }
+
+    /*Blogs page styling here*/
+
+    .colage-img {
+        display: none;
+    }
+
+    .blogs-h1 {
+        text-align: center;
+    }
+
+    .black-space-blogs {
+        background-color: black;
+        padding: 50px;
+    }
+
+    .blogs-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .loading-blogs {
+        border: 5px solid gray;
+        border-top: 5px solid rgb(20, 20, 20);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blog-p {
+        padding-bottom: 20px;
+        border-bottom: solid lightgray 1px;
+        margin-bottom: 20px;
+    }
+
+    /*blogs spesific styling here*/
+
+    .details-container {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .blog-spesific-h1 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+
+    #blog-spefic-p-excerpt p {
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    .blog-spesific-p p {
+        font-size: 20px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .loading {
+        display: none;
+    }
+
+    .loader-blog-details {
+        border: 5px solid gray;
+        border-top: 5px solid rgb(20, 20, 20);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    /*About styling here*/
+
+    .about-h1 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .about-h2 {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .about-p {
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+
+    .about-contact-button {
+        background-color: black;
+        width: 120px;
+        display: inline-block;
+        padding: 12px 10px 12px 10px;
+        border-radius: 5px;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 50px;
+    }
 
 }
 
