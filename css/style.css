@@ -1199,7 +1199,7 @@ button {
     }
 
     .main-h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .main-image-nametext {
@@ -1214,7 +1214,7 @@ button {
 
     .main-image-jobb-title {
         position: absolute;
-        bottom: 40%;
+        bottom: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
