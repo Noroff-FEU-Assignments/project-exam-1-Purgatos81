@@ -780,7 +780,7 @@ button {
     }
 
     .main-h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .main-image-nametext {
@@ -789,8 +789,6 @@ button {
         left: 40%;
         transform: translate(-35%, -50%);
         color: white;
-        font-size: 20px;
-
     }
 
     .main-image-jobb-title {
@@ -800,6 +798,7 @@ button {
         transform: translate(-50%, -50%);
         color: white;
         border-bottom: solid 1px white;
+        font-size: 25px;
     }
 
     .main-image-h {
@@ -808,7 +807,7 @@ button {
         left: 30%;
         transform: translate(-20%, -40%);
         color: white;
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
         display: none; /*Unsure if it fits*/
     }
@@ -1214,7 +1213,7 @@ button {
 
     .main-image-jobb-title {
         position: absolute;
-        top: 55%;
+        bottom: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
