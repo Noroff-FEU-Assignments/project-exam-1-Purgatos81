@@ -31,9 +31,12 @@ async function fetchBlog() {
 
         blogContainer.innerHTML = `
         <div class="blog-spesific-container">
+        <div id="blog-modal">
+        <img class="blog-modal-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        </div>
         <h1 class="blog-spesific-h1">${blogDetails.title.rendered}</h1>
         <div id="blog-spefic-p-excerpt"> ${blogDetails.excerpt.rendered}</div>
-        <img class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        <img id="spesific-blog-img" class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
         <div class="blog-spesific-p">${blogDetails.content.rendered}</div>
         </div>   
         `
@@ -46,3 +49,4 @@ async function fetchBlog() {
 }
 
 fetchBlog()
+
