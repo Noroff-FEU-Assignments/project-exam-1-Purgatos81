@@ -1,7 +1,9 @@
 //Blog details 
 
 const blogContainer = document.querySelector(".details");
+const modalContainer =document.querySelector(".modal-div");
 const detailTitle = document.querySelector(".detailTitle");
+console.log(modalContainer);
 console.log(blogContainer);
 
 const QueryString = document.location.search;
@@ -29,11 +31,11 @@ async function fetchBlog() {
 
         detailTitle.innerHTML = `${blogDetails.title.rendered} | TWC-Blog`
 
+        modalContainer.innerHTML = `<img src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        `
+
         blogContainer.innerHTML = `
         <div class="blog-spesific-container">
-        <div id="blog-modal">
-        <img class="blog-modal-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
-        </div>
         <h1 class="blog-spesific-h1">${blogDetails.title.rendered}</h1>
         <div id="blog-spefic-p-excerpt"> ${blogDetails.excerpt.rendered}</div>
         <img id="spesific-blog-img" class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
