@@ -91,6 +91,12 @@ img {
     background-color: black;
 }
 
+.added-modal {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .blog-spesific-p a {
     color: blue;
 }

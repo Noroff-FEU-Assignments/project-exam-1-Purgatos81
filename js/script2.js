@@ -29,6 +29,7 @@ async function fetchBlog() {
         console.log(blogDetails);
         console.log(blogImgDetails);
 
+
         detailTitle.innerHTML = `${blogDetails.title.rendered} | TWC-Blog`
 
         modalContainer.innerHTML = `<img class="added-modal" id="added-modal-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
@@ -38,7 +39,9 @@ async function fetchBlog() {
         <div class="blog-spesific-container">
         <h1 class="blog-spesific-h1">${blogDetails.title.rendered}</h1>
         <div id="blog-spefic-p-excerpt"> ${blogDetails.excerpt.rendered}</div>
+        <div class="modal-container">
         <img id="spesific-blog-img" class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        </div>
         <div class="blog-spesific-p">${blogDetails.content.rendered}</div>
         </div>   
         `

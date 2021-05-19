@@ -4,18 +4,20 @@ var containerModal = document.querySelector("#blog-modal");
 
 console.log(containerModal);
 
-var clickImg = document.querySelector("#spesific-blog-img");
+var clickImg = document.querySelector(".details-container");
 
-var clickButton = document.querySelector(".modalButton");
+var closeModal = document.querySelector(".modal-span");
 
 console.log(clickImg);
 
+clickImg.addEventListener("click", clickFunction);
 
-
-clickButton.onclick = function(){
-    containerModal.style.display = "block";
+function clickFunction() {
+    containerModal.style.display = "block"; //work around, problemer med bubbling.
 }
 
-clickImg.onclick = function(){
-    containerModal.style.display = "block";
+window.onclick = function(close) {
+    if (close.target == containerModal) {
+        containerModal.style.display = "none";
+    }
 }
