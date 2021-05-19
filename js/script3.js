@@ -5,6 +5,8 @@ const carouselResults = document.querySelector(".carousel-container");
 const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts";
 const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
 
+const addCarousel = document.querySelector(".carousalMore");
+
 console.log(bluenordBlogsApi);
 console.log(bluenordEmbedApi);
 
