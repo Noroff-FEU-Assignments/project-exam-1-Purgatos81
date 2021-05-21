@@ -21,7 +21,7 @@ async function getBlogs() {
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 10; i++) {
             blogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
                 <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
@@ -50,7 +50,7 @@ async function getMoreBlogs() {
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
-        for (let i = 8; i < blogs.length; i++) {
+        for (let i = 10; i < blogs.length; i++) {
             moreBlogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
                 <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
