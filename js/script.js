@@ -3,7 +3,7 @@
 
 const blogResults = document.querySelector(".blogs");
 const moreBlogResults = document.querySelector(".more-blogs");
-const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts";
+const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts?per_page=20";
 const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
 const getMoreBlogsButton = document.querySelector(".moreBlogsButton")
 
