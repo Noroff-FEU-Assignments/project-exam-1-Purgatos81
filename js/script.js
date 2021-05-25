@@ -5,6 +5,8 @@ const blogResults = document.querySelector(".blogs");
 const moreBlogResults = document.querySelector(".more-blogs");
 const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts";
 const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
+const getMoreBlogsButton = document.querySelector(".moreBlogsButton")
+
 
 console.log(bluenordBlogsApi);
 console.log(bluenordEmbedApi);
@@ -66,3 +68,10 @@ async function getMoreBlogs() {
 }
 
 getMoreBlogs();
+
+getMoreBlogsButton.addEventListener("click", clickForMore);
+
+function clickForMore() {
+    moreBlogResults.style.display = "block";
+    getMoreBlogsButton.style.display = "none";
+}

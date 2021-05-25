@@ -91,6 +91,10 @@ img {
     background-color: black;
 }
 
+.more-blogs {
+    display: none;
+}
+
 .added-modal {
     width: 80%;
     margin-left: 10%;
