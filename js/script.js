@@ -48,7 +48,7 @@ async function getMoreBlogs() {
         const jsonres2 = await response2.json();
         console.log(jsonres);
         console.log(jsonres2);
-        moreBlogResults.innerHTML = "";
+        // moreBlogResults.innerHTML = "";
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
