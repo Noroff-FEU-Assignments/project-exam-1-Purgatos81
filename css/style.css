@@ -516,6 +516,12 @@ button {
 
     }
 
+    .more-blogs {
+        display: none;
+        grid-template-columns: auto auto;
+        margin: 0px 50px;
+    }
+
     .loading-blogs {
         display: none;
     }
@@ -524,6 +530,12 @@ button {
         grid-column: 2/3;
         margin: 50px;
         padding: 50px 50px;
+    }
+
+    .moreBlogsButtonContainer {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
     }
 
     .blog-a-link {

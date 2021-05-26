@@ -5,7 +5,7 @@ const blogResults = document.querySelector(".blogs");
 const moreBlogResults = document.querySelector(".more-blogs");
 const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts?per_page=20";
 const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
-const getMoreBlogsButton = document.querySelector(".moreBlogsButton")
+const getMoreBlogsButton = document.querySelector(".moreBlogsButtonContainer")
 
 
 console.log(bluenordBlogsApi);
@@ -23,7 +23,7 @@ async function getBlogs() {
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 6; i++) {
             blogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
                 <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
@@ -52,7 +52,7 @@ async function getMoreBlogs() {
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
-        for (let i = 10; i < blogs.length; i++) {
+        for (let i = 6; i < 10; i++) {
             moreBlogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
                 <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
@@ -72,6 +72,6 @@ getMoreBlogs();
 getMoreBlogsButton.addEventListener("click", clickForMore);
 
 function clickForMore() {
-    moreBlogResults.style.display = "block";
+    moreBlogResults.style.display = "grid";
     getMoreBlogsButton.style.display = "none";
 }
