@@ -75,6 +75,12 @@ img {
     color: black;
 }
 
+.moreBlogsButtonContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
 .blog-a-link:visited {
     color: black;
 }
@@ -530,12 +536,6 @@ button {
         grid-column: 2/3;
         margin: 50px;
         padding: 50px 50px;
-    }
-
-    .moreBlogsButtonContainer {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 50px;
     }
 
     .blog-a-link {
