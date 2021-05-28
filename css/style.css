@@ -943,7 +943,13 @@ button {
         display: none; /*Unsure if it fits*/
     }
 
-    #carousel-button {
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #carousel-button1, #carousel-button2, #carousel-button3, 
+    #carousel-button4,#carousel-button5,#carousel-button6{
         color: black;
         background: none;
         padding: 0;
@@ -963,7 +969,7 @@ button {
     .latest-post-p {
         font-size: 20px;
         color: black;
-        text-align: left;
+        text-align: center;
         padding-left: 25px;
     }
 
@@ -973,6 +979,13 @@ button {
         justify-content: space-around;
     }
 
+    .carousel-container-2, .carousel-container-3 {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .loading-mob-home {
         border: 5px solid gray;
