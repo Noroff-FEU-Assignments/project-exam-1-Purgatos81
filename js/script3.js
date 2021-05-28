@@ -2,10 +2,9 @@
 
 
 const carouselResults = document.querySelector(".carousel-container");
-const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts";
-const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia";
+const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts?per_page=20";
+const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&?per_page=20";
 
-const addCarousel = document.querySelector(".carousalMore");
 
 console.log(bluenordBlogsApi);
 console.log(bluenordEmbedApi);
@@ -22,7 +21,7 @@ async function getBlogs() {
         const blogs = jsonres;
         const blogsImg = jsonres2;
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 8; i < 12; i++) {
             carouselResults.innerHTML += 
             `<div class"new-post-container">
             <a class="carousel-a-link" href="blogdetails.html?id=${blogs[i].id}">
