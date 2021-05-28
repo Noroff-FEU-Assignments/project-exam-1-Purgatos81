@@ -80,6 +80,21 @@ img {
     color: black;
 }
 
+.container-left-2 {
+    display: none;
+}
+
+.container-left-3 {
+    display: none;
+}
+
+.container-right-2 {
+    display: none;
+}
+
+.container-right-3 {
+    display: none;
+}
 
 /*Blogs page styling*/
 
@@ -435,8 +450,31 @@ button {
         margin-right: auto;
     }
 
+    #carousel-button {
+        color: white;
+        background: none;
+        padding: 0;
+        margin-top: -50px;
+        width: 15px;
+        font-size: 20px;
+    }
+
     .carousel-container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .carousel-container-2 {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .carousel-container-3 {
+        display: none;
         flex-wrap: wrap;
         justify-content: space-around;
 
@@ -879,6 +917,15 @@ button {
         display: none; /*Unsure if it fits*/
     }
 
+    #carousel-button {
+        color: black;
+        background: none;
+        padding: 0;
+        margin-top: -50px;
+        width: 15px;
+        font-size: 20px;
+    }
+
     .latest-container {
         position: relative;
         max-width: 900px;
@@ -1307,13 +1354,23 @@ button {
         margin-bottom: 10px;
     }
 
+    #carousel-button {
+        color: black;
+        background: none;
+        padding: 0;
+        margin-top: -50px;
+        width: 15px;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
     .latest-post-p {
         font-size: 20px;
         text-align: left;
         padding-left: 15px;
     }
 
-    .carousel-container {
+    .carousel-container, .carousel-container-2, .carousel-container-3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
