@@ -6,12 +6,12 @@ const carouselResults2 = document.querySelector(".carousel-container-2");
 const carouselResults3 = document.querySelector(".carousel-container-3");
 const bluenordBlogsApi = "https://bluenord.no/wp-json/wp/v2/posts?per_page=20";
 const bluenordEmbedApi = "https://bluenord.no/wp-json/wp/v2/posts/?_embed=wp:featuredmedia&per_page=20";
-const leftButton1 = document.querySelector(".container-left-1")
-const rightButton1 = document.querySelector(".container-right-1")
-const leftButton2 = document.querySelector(".container-left-2")
-const rightButton2 = document.querySelector(".container-right-2")
-const leftButton3 = document.querySelector(".container-left-3")
-const rightButton3 = document.querySelector(".container-right-3")
+const leftButton1 = document.querySelector(".container-left-1");
+const rightButton1 = document.querySelector(".container-right-1");
+const leftButton2 = document.querySelector(".container-left-2");
+const rightButton2 = document.querySelector(".container-right-2");
+const leftButton3 = document.querySelector(".container-left-3");
+const rightButton3 = document.querySelector(".container-right-3");
 
 console.log(bluenordBlogsApi);
 console.log(bluenordEmbedApi);

@@ -450,7 +450,8 @@ button {
         margin-right: auto;
     }
 
-    #carousel-button {
+    #carousel-button1, #carousel-button2, #carousel-button3, 
+    #carousel-button4,#carousel-button5,#carousel-button6{
         color: white;
         background: none;
         padding: 0;
