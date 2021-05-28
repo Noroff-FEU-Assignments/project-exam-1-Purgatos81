@@ -1595,6 +1595,10 @@ button {
         margin-top: 0;
     }
 
+    .form-button {
+        margin-top: 40px;
+    }
+
     /*About styling here*/
 
     .about-h1 {
