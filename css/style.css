@@ -420,13 +420,13 @@ button {
         left: 40%;
         transform: translate(-35%, -50%);
         color: white;
-        font-size: 40px;
+        font-size: 35px;
 
     }
 
     .main-image-jobb-title {
         position: absolute;
-        top: 65%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
