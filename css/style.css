@@ -961,7 +961,7 @@ button {
     .latest-container {
         position: relative;
         max-width: 900px;
-        min-width: 900px;
+        min-width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1003,7 +1003,7 @@ button {
     }
 
     .carousel-img {
-        max-width: 180px;
+        max-width: 120px;
         padding: 0 1px;
     }
 
