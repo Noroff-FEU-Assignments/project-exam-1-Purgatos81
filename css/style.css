@@ -1590,6 +1590,11 @@ button {
         align-self: center;
     }
 
+    /*contact form styling here*/
+    .form-H1 {
+        margin-top: 0;
+    }
+
     /*About styling here*/
 
     .about-h1 {
