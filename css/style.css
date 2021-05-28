@@ -1380,24 +1380,37 @@ button {
         margin-bottom: 10px;
     }
 
-    #carousel-button {
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #carousel-button1, #carousel-button2, #carousel-button3, 
+    #carousel-button4,#carousel-button5,#carousel-button6{
         color: black;
         background: none;
         padding: 0;
         margin-top: -50px;
         width: 15px;
         font-size: 20px;
-        margin-left: 15px;
     }
 
     .latest-post-p {
         font-size: 20px;
-        text-align: left;
+        text-align: center;
         padding-left: 15px;
     }
 
-    .carousel-container, .carousel-container-2, .carousel-container-3 {
+    .carousel-container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-container-2, .carousel-container-3 {
+        display: none;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-left: auto;
