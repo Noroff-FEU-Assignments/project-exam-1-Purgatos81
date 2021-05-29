@@ -338,12 +338,12 @@ button {
         padding-right: 15px;
     }
 
-    .icon-copy-container {
+    /* .icon-copy-container {
         grid-column-end: 7;
         align-self: center;
         text-align: center;
         margin: 0;
-    }
+    } */
 
     .icon-copy-nav {
         display: flex;
