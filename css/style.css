@@ -371,7 +371,6 @@ button {
     .footer-container {
         display: grid;
         grid-template-columns: 20px auto 20px;
-        grid-template-rows: 1fr 20px 1 20px 1fr;
         background-color: black;
         padding-bottom: 15px;
     }
@@ -869,7 +868,6 @@ button {
     .footer-container {
         display: grid;
         grid-template-columns: 20px auto 20px;
-        grid-template-rows: 1fr 20px 1 20px 1fr;
         background-color: black;
         padding-bottom: 15px;
     }
