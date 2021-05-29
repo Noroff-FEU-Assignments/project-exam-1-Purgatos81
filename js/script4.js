@@ -13,7 +13,7 @@ console.log(clickImg);
 clickImg.addEventListener("click", clickFunction);
 
 function clickFunction() {
-    containerModal.style.display = "block"; //work around, problemer med bubbling.
+    containerModal.style.display = "block";
 }
 
 window.onclick = function(close) {

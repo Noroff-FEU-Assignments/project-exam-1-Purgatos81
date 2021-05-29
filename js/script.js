@@ -26,7 +26,8 @@ async function getBlogs() {
         for (let i = 0; i < 10; i++) {
             blogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
-                <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
+                <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" 
+                alt="${blogsImg[i]._embedded["wp:featuredmedia"][0].alt_text}"> 
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <div id="blog-p"> ${blogs[i].excerpt.rendered}</div>
             </a>`
@@ -55,7 +56,8 @@ async function getMoreBlogs() {
         for (let i = 10; i < blogs.length; i++) {
             moreBlogResults.innerHTML += 
             `<a class="blog-a-link" href="blogdetails.html?id=${blogs[i].id}">
-                <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"> 
+            <img class="blog-img" src="${blogsImg[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" 
+            alt="${blogsImg[i]._embedded["wp:featuredmedia"][0].alt_text}"> 
             <h2 class="blog-head"> ${blogs[i].title.rendered}</h2>
             <div id="blog-p"> ${blogs[i].excerpt.rendered}</div>
             </a>`

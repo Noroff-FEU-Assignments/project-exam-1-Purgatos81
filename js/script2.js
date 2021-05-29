@@ -40,7 +40,8 @@ async function fetchBlog() {
         <h1 class="blog-spesific-h1">${blogDetails.title.rendered}</h1>
         <div id="blog-spefic-p-excerpt"> ${blogDetails.excerpt.rendered}</div>
         <div class="modal-container">
-        <img id="spesific-blog-img" class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}">
+        <img id="spesific-blog-img" class="blog-spesific-img" src="${blogImgDetails._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"
+        alt="${blogImgDetails._embedded["wp:featuredmedia"][0].alt_text}">
         </div>
         <div class="blog-spesific-p">${blogDetails.content.rendered}</div>
         </div>   
