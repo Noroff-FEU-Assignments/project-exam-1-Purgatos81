@@ -306,7 +306,7 @@ button {
     }
 
     .nav-button-active:active {
-        color: white;
+        color: grey;
     }
 
     .nav-button:hover {
@@ -314,7 +314,7 @@ button {
     }
 
     .nav-button:active {
-        color: white;
+        color: grey;
     }
 
     #active {
