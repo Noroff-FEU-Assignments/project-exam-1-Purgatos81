@@ -591,14 +591,14 @@ button {
 
     .blogs {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         margin: 0px 50px;
 
     }
 
     .more-blogs {
         display: none;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         margin: 0px 50px;
     }
 
