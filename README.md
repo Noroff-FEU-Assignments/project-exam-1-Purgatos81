@@ -1,5 +1,7 @@
 ## Project Exam 1
 
+![image](https://github.com/Purgatos81/Semester-Project-2/blob/main/media/DSIMG.jpg)
+
 ## Goal
 
 To put into practice the skills learned over your first year of studies.
