@@ -11,11 +11,13 @@ I was tasked with creating a blog site. I could choose the design and topics cov
 -	List of blog posts that shows 10 posts, and a button to show more posts.
 -	Blog post specific pages .
 -	Contact page that uses javascript to display error messages if input does not meet requirements.
+The API was hosted using Wordpress.
 
 ## Built with
  - Basic HTML
  -  CSS
  -  Javascript
+ -  [Wordpress](https://wordpress.com/)
 
 ## Getting Started
 
