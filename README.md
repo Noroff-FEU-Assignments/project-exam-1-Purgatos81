@@ -1,6 +1,6 @@
 ## Project Exam 1
 
-![image](https://github.com/Purgatos81/Semester-Project-2/blob/main/media/DSIMG.jpg)
+![image](https://github.com/Noroff-FEU-Assignments/project-exam-1-Purgatos81/blob/main/media/TWCfront.jpg)
 
 ## Goal
 
